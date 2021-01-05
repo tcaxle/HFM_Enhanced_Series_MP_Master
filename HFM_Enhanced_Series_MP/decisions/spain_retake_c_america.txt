@@ -1,0 +1,111 @@
+political_decisions = {
+	colonial_reconquista_frca = {
+		picture = map_central_america
+		potential = {
+			OR = {
+				tag = IBR
+				tag = SPC
+			}
+			UCA = {
+				exists = yes
+			}
+			NOT = { has_country_flag = reconquista_frca }
+		}
+
+		allow = {
+			is_greater_power = yes
+			war = no
+			war_policy = jingoism
+		}
+
+		effect = {
+			set_country_flag = reconquista_frca
+			prestige = 5
+			badboy = 5
+			casus_belli = {
+				target = UCA
+				type = conquest
+				months = 12
+			}
+			war = {
+				target = UCA
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	frca_breakaways = {
+		picture = map_central_america
+		potential = {
+			OR = {
+				tag = IBR
+				tag = SPC
+			}
+			has_country_flag = reconquista_frca
+			OR = {
+				COS = {
+					exists = yes
+				}
+				HON = {
+					exists = yes
+				}
+				NIC = {
+					exists = yes
+				}
+				ELS = {
+					exists = yes
+				}
+				GUA = {
+					exists = yes
+				}
+				LOS = {
+					exists = yes
+				}
+			}
+		}
+
+		allow = {}
+
+		effect = {
+			casus_belli = {
+				target = COS
+				type = conquest
+				months = 12
+			}
+			casus_belli = {
+				target = HON
+				type = conquest
+				months = 12
+			}
+			casus_belli = {
+				target = NIC
+				type = conquest
+				months = 12
+			}
+			casus_belli = {
+				target = ELS
+				type = conquest
+				months = 12
+			}
+			casus_belli = {
+				target = GUA
+				type = conquest
+				months = 12
+			}
+			casus_belli = {
+				target = LOS
+				type = conquest
+				months = 12
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

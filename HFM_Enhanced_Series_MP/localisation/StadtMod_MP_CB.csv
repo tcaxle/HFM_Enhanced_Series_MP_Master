@@ -1,0 +1,46 @@
+#############################################;;;;;;;;;;;;;;x
+negotiated_state_transfer;Negotiated State Transfer;;;;;;;;;;;;;x
+negotiated_state_transfer_desc;Transfer a state or colonial region to another country with no effect on infamy, prestige, or jingoism and without a truce at the end;;;;;;;;;;;;x
+negotiated_state_transfer_short;Transfer $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+negotiated_state_transfer_setup;Transfer $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_STATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_STATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+negotiated_substate_transfer;Negotiated Substate Transfer;;;;;;;;;;;;;x
+negotiated_substate_transfer_desc;Transfer a substate with no effect on infamy, prestige, or jingoism and with a 1 month truce at the end;;;;;;;;;;;;x
+negotiated_substate_transfer_short;Transfer $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+negotiated_substate_transfer_setup;Transfer $STATE$ from $RECIPIENT$;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_SUBSTATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_SUBSTATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+negotiated_puppet_release;Negotiated Puppet Release;;;;;;;;;;;;;x
+negotiated_puppet_release_desc;Release a puppet with no effect on infamy, prestige, or jingoism and with a 1 month truce at the end;;;;;;;;;;;;x
+negotiated_puppet_release_short;$THIRD$ is released;;;;;;;;;;;;;x
+negotiated_puppet_release_setup;$THIRD$ is released;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_PUPPET_NAME;$ORDER$$SECOND$ Negotiated Puppet Release;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_PUPPET_NAME;$ORDER$$SECOND$ Negotiated Puppet Release;;;;;;;;;;;;x
+conquest_low;Minor Conquest;;;;;;;;;;;;;x
+conquest_low_desc;Annex a country of small size and population by conquest;;;;;;;;;;;;;x
+conquest_low_setup;Annex minor nation of $RECIPIENT$;;;;;;;;;;;;;x
+conquest_low_short;Annex $RECIPIENT$;;;;;;;;;;;;;x
+NORMAL_WAR_LOWER_TARRIFS_NAME;$ORDER$$FIRST$ War to Remove $SECOND$ Tarrifs;;;;;;;;;;;;x
+AGRESSION_WAR_LOWER_TARRIFS_NAME;$ORDER$$FIRST$ War to Remove $SECOND$ Tarrifs;;;;;;;;;;;;x
+lower_tarrifs_cb;Lower Tarrifs;;;;;;;;;;;;;x
+lower_tarrifs_cb_desc;Force a country to remove their tarrifs.;;;;;;;;;;;;;x
+lower_tarrifs_cb_setup;Remove the tarrifs of $RECIPIENT$;;;;;;;;;;;;;x
+lower_tarrifs_cb_short;Remove the tarrifs of $RECIPIENT$;;;;;;;;;;;;;x
+NORMAL_WAR_ACCESS_NAME;$ORDER$$FIRST$ War for $SECOND$ Military Access;;;;;;;;;;;;;x
+AGRESSION_WAR_ACCESS_NAME;$ORDER$$FIRST$ War for $SECOND$ Military Access;;;;;;;;;;;;;x
+military_access_cb;Military Access;;;;;;;;;;;;;x
+military_access_cb_desc;Force access through a non-GP, at the cost of their prestige. NOTE: do not peace out, the war is the access.;;;;;;;;;;;;;x
+military_access_cb_setup;Gain access through $RECIPIENT$;;;;;;;;;;;;;x
+military_access_cb_short;Gain access through $RECIPIENT$;;;;;;;;;;;;;x
+NORMAL_WAR_MASS_CONQUEST_NAME;$ORDER$$FIRST$ Mass Conquest of $SECOND_COUNTRY$;;;;;;;;;;;;;x
+AGRESSION_WAR_MASS_CONQUEST_NAME;$ORDER$$FIRST$ Mass Conquest of $SECOND_COUNTRY$;;;;;;;;;;;;;x
+mass_conquest_cb;Mass Conquest;;;;;;;;;;;;;x
+mass_conquest_cb_desc;Fully annex an independent nation;;;;;;;;;;;;;x
+mass_conquest_cb_setup;Fully annex $RECIPIENT$;;;;;;;;;;;;;x
+mass_conquest_cb_short;Fully annex $RECIPIENT$;;;;;;;;;;;;;x
+NORMAL_WAR_NO_CB_NAME;Aggression War;;;;;;;;;;;;;x
+AGRESSION_WAR_NO_CB_NAME:Aggression War;;;;;;;;;;;;;x
+aggression_cb;Aggression War;;;;;;;;;;;;;x
+aggression_cb_desc;Start a war without justification. NOTE: Will cost 12 infamy when used.;;;;;;;;;;;;;x
+aggression_cb_short;No Set Goal

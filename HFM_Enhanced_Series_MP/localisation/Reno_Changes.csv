@@ -1,0 +1,11 @@
+#Event and Decision Names;;;;;;;;;;;;;;x
+EVTNAME9999901;Craftsmen Exploit Fix (Part 1);;;;;;;;;;;;;;x
+EVTDESC9999901;This event converts all non-core/non-accepted craftsmen into farmers if they are on your cores. Part 2 will spawn in 3 days, be sure to select this option FIRST.;;;;;;;;;;;;;;x
+EVTNAME9999902;Craftsmen Exploit Fix (Part 2);;;;;;;;;;;;;;x
+EVTDESC9999902;This event converts all 100% unemployed farmers into labourers.;;;;;;;;;;;;;;x
+EVTNAME9999903;Craftsmen Exploit Fix (Part 3);;;;;;;;;;;;;;x
+EVTDESC9999903;This event converts all 100% unemployed labourers into artisans.;;;;;;;;;;;;;;x
+craftsmen_fix_title;Craftsmen Fix Decision (10 year cooldown);;;;;;;;;;;;;;x
+craftsmen_fix_desc;This decision launches 3 events one after another that converts all non-core / non-accepted craftsmen that are on your cores ONLY into farmers. The second event will convert all 100% unemployed farmers into labourers (bypasses a glitch due to the limited power of pop configuring). The third will convert all 100% labourers into artisans (incase farming rgos were full and now labourers in a province with no labourer employment).;;;;;;;;;;;;;;x
+craftsmen_fix_cooldown;Craftsmen Fix Cooldown;;;;;;;;;;;;;;x
+craftsmen_fix_cooldown_desc;10 year reset before the decision can be taken again.;;;;;;;;;;;;;;x

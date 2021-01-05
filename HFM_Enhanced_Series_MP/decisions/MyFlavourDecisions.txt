@@ -1,0 +1,392 @@
+political_decisions = {
+
+	allow_no_cb_wars = {
+		picture = gtfo
+		potential = { 
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { 
+				has_country_flag = allows_no_cb
+			} 
+		}
+		
+		allow = {
+			war_policy = jingoism
+		}
+		
+		effect = { set_country_flag = allows_no_cb }
+	}
+	
+	disallow_no_cb_wars = {
+		picture = gtfo
+		potential = { 
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+			has_country_flag = allows_no_cb
+		}
+		
+		allow = {  }
+		
+		effect = { clr_country_flag = allows_no_cb }
+	}
+
+	all_of_mexico = {
+		picture = manifest_destiny 
+		potential = {
+			tag = USA
+			is_greater_power = yes
+			NOT = { has_country_flag = formexico }
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			has_country_flag = hasmanifestdestiny 
+		}
+
+		effect = {
+			set_country_flag = formexico
+			badboy = 32
+			war = {
+				target = MEX
+				attacker_goal = { casus_belli = unification_annex_casus_belli }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	for_the_republic = {
+		picture = provincia_britannia
+		potential = {
+			tag = ENG
+			NOT = { year = 1851 }
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			NOT = { year = 1851 }
+		}
+
+		effect = {
+			300 = {
+				add_core = GBR
+				secede_province = GBR
+			}
+			GBR = {
+				capital = 300
+				leadership = 80
+			}
+			change_tag_no_core_switch = GBR
+			GBR = {
+				war = {
+					target = ENG
+					attacker_goal = {
+						casus_belli = acquire_all_cores
+					}
+					defender_goal = {
+						casus_belli = civil_war
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	violate_the_tarrif_treaty = {
+		picture = pax_britannica
+		potential = {
+			ai = no
+			has_country_modifier = lost_the_tarrif_war 
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			remove_country_modifier = lost_the_tarrif_war
+			badboy = 3
+			prestige = -20
+		}
+	}
+	
+	form_iberia_peacefully = {
+		picture = fueros
+		potential = {
+			tag = SPA
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+			war = no
+			relation = {
+				who = POR
+				value = 150
+			}
+			state_n_government = 1
+			idealism = 1
+			citizenship_policy = full_citizenship
+			POR = { in_sphere = SPA }
+		}
+		
+		effect = {
+			change_tag = IBR
+			prestige = 25
+			any_country = {
+				limit = {
+					tag = POR
+				}
+				country_event = { id=11101 days = 0 }
+			}
+		}
+	}
+	
+	accept_the_portuguese = {
+		picture = fueros
+		potential = {
+			tag = IBR
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { accepted_culture = portuguese }
+		}
+		
+		allow = {
+			war = no
+			NOT = { citizenship_policy = residency }
+		}
+		
+		effect = {
+			add_accepted_culture = portuguese
+		}
+	}
+	
+	accept_the_basque = {
+		picture = fueros
+		potential = {
+			tag = IBR
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+			accepted_culture = portuguese
+			NOT = { accepted_culture = basque }
+		}
+		
+		allow = {
+			war = no
+			NOT = { citizenship_policy = residency }
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			add_accepted_culture = basque
+		}
+	}
+	
+	CHI_accept_mongols = {
+		picture = tibet_capital
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = mongol }
+			ai = no
+			NOT { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			MGL = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			government = democracy
+			citizens_rights = all_voting_pops
+			centralization = federalism
+		}
+		
+		effect = {
+			add_accepted_culture = mongol
+			MGL = {
+				all_core = {
+					remove_core = MGL
+				}
+			}
+			IMG = {
+				all_core = {
+					remove_core = IMG
+				}
+			}
+			KML = {
+				all_core = {
+					remove_core = KML
+				}
+			}
+		}
+	}
+	
+	CHI_accept_tibetans = {
+		picture = tibet_capital
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = tibetan }
+			ai = no
+			NOT { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			TIB = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			government = democracy
+			citizens_rights = all_voting_pops
+			centralization = federalism
+		}
+		
+		effect = {
+			add_accepted_culture = tibetan
+			TIB = {
+				all_core = {
+					remove_core = TIB
+				}
+			}
+		}
+	}
+	
+	CHI_accept_vietnamese = {
+		picture = tibet_capital
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = vietnamese }
+			ai = no
+			NOT { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			government = democracy
+			citizens_rights = all_voting_pops
+			centralization = federalism
+		}
+		
+		effect = {
+			add_accepted_culture = vietnamese
+		}
+	}
+	
+	CHI_accept_uighurs = {
+		picture = xiang_army
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = uighur }
+			ai = no
+			NOT { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = {
+			war = no
+			accepted_culture = mongol
+			accepted_culture = tibetan
+			government = democracy
+			citizens_rights = all_voting_pops
+			centralization = federalism
+			mass_politics = 1
+		}
+		
+		effect = {
+			add_accepted_culture = uighur
+			FJN = {
+				all_core = {
+					remove_core = FJN
+				}
+			}
+			GMJ = {
+				all_core = {
+					remove_core = GMJ
+				}
+			}
+			GNG = {
+				all_core = {
+					remove_core = GNG
+				}
+			}
+			GXI = {
+				all_core = {
+					remove_core = GXI
+				}
+			}
+			HNN = {
+				all_core = {
+					remove_core = HNN
+				}
+			}
+			HUI = {
+				all_core = {
+					remove_core = HUI
+				}
+			}
+			MCK = {
+				all_core = {
+					remove_core = MCK
+				}
+			}
+			SXI = {
+				all_core = {
+					remove_core = SXI
+				}
+			}
+			SZC = {
+				all_core = {
+					remove_core = SZC
+				}
+			}
+			TAI = {
+				all_core = {
+					remove_core = TAI
+				}
+			}
+			XBI = {
+				all_core = {
+					remove_core = XBI
+				}
+			}
+			XIN = {
+				all_core = {
+					remove_core = XIN
+				}
+			}
+			YNN = {
+				all_core = {
+					remove_core = YNN
+				}
+			}
+			NIA = {
+				all_core = {
+					remove_core = NIA
+				}
+			}
+			CHI = {
+				all_core = {
+					remove_core = ENG
+					remove_core = POR
+					remove_core = JAP
+					remove_core = RUS
+					remove_core = FRA
+					remove_core = GER
+					remove_core = ITA
+					remove_core = SPA
+				}
+			}
+		}
+	}
+}

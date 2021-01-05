@@ -1,0 +1,40 @@
+political_decisions = {
+	cultural_expansion = {
+		picture = propose_danube_federation
+		potential = {
+			tag = DNB
+			OR = {
+				NOT = { accepted_culture = serb }
+				NOT = { accepted_culture = montenegrin }
+				NOT = { accepted_culture = bosniak }
+				NOT = { accepted_culture = albanian }
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			accepted_culture = hungarian
+			accepted_culture = czech
+			accepted_culture = romanian
+			accepted_culture = croat
+			accepted_culture = slovene
+			accepted_culture = slovak
+			accepted_culture = polish
+		}
+		
+		effect = {
+			add_accepted_culture = serb
+			add_accepted_culture = montenegrin
+			add_accepted_culture = bosniak
+			add_accepted_culture = albanian 
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

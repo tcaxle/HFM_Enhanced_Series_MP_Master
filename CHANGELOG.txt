@@ -1,0 +1,306 @@
+The HFM Enhanced Series
+#######################
+
+This mod is built on HFM V1.27I and HFM More Stuff V3.5 submod. Below are my changes.
+Infamy reduction depending on rank & healthcare changes inspired by Heirs to Aquitania, population size effects and LGLC tax moddifiers inspired by PDM Divide by Zero.
+Population growth decision and conditions UI changes taken from The Grand Combo.
+Thanks to Nurse_Reno for the craftsmen fix.
+General UI change taken from Victoria Universalis. Everything else is my own (as far as I remember).
+Note that 'global' on a modifier means just across your country.
+
+
+Version 3
+---------
+CHECKSUM: (Steam version)
+          (Cracked version)
+
+Flavour Changes
+* UFB
+-- Now culture union of British cultures
+-- Welfare policies for parties added
+* China
+-- Qing & Taiping republics will always get the Xinhai revolution first, rather than going into the warlord period without it
+-- Xinhai revolution, Beiyang china option now closes the borders
+-- Population boom is 5 years like the european ones
+-- Post westernisation baby boom now for 5 years as well
+-- Can accept tibetan, mongol and vietnamese when researched revolution and counterrev. and if democratic enough
+-- Can accept Uighur and remove european & other chinese states' cores on chinese cores
+-- Event for a democratic china to gain cores on Korea and accept korean (10 infamy, reduces relations with Japan)
+* USA
+-- Slavery debate will always fire at the start, stops slavery being abolished before the civil war
+* EIC/India
+-- EIC if it wins the war of independence vs the UK can form india
+-- India can accept all indian cultures, anglo-indian, and english
+-- India can claim tibet and nepal, and accept tibetan like China
+
+CBs & Infamy
+* Can take concessions off a player in china (i.e allowed state restriction removed for vs a player)
+* New 'No CB' CB called Aggression War
+-- Requires jingoism to use, and take the decision for it to show
+-- Always active, costs 12 infamy to use
+-- No war goal, no win condition
+
+Political & Reform Changes
+* Conservatives in a republic now have a base of +25% willingness to reform
+* Liberals in a republic now have a base of +25% willingness for social reform
+-- These effects are added via an event (MTTH 1 month), and if no longer a republic will lose them
+
+Liferating
+* Asia gets a 2nd liferating increase after the first by adding 5 to all cores (can happen to India, China & Korea)
+
+National Values
+* Equality
+-- Immigrant attraction buffed to 50%
+-- Now also +5% political reform desire
+* Liberty
+-- Immigrant attraction buffed to 50%
+* Autocracy 
+-- Immigrant attraction nerfed to -20%
+
+Literacy Impact
+* Halved the impact on pop growth from high literacy, moved two negative growths into inventions
+
+Tech
+* RGO size increases with power techs up to ~x3 base size
+
+Inventions
+* Germ Theory & X-rays pop growth reduced from 0.02 to 0.01
+* Darwinism & Decline of the West now give -0.01 pop growth as well
+
+New General Decisions
+* Population growth nerf for education efficiency removed
+* Late game life rating increase removed
+* Now decision for pop growth activates an event to decide the growth level
+-- With similar consequences as previously
+
+GFX & Localisation Changes
+* China republic name changed to: The Chinese Federation
+
+Bugs Fixes
+* Cratsmen exploit now has a workaround to make it recoverable from
+-- i.e italy wont be stuck with south german craftsmen after taking back Veniza
+* UK now starts with the correct spherelings and military units & leaders
+-----------------------------------------------------------------------------------------------------------
+
+
+Version 2
+---------
+CHECKSUM: GRLA (Steam version)
+          NJZC (Cracked version)
+
+Flavour Changes
+* UFB
+-- No IRA event
+-- New parties 
+-- Immigration attraction debuffed inline with other immigration changes, and now needs to be isolationsit to take it
+* China
+-- If taiping becomes a republic will always get the warlords era start
+-- If civilised as any chinese tag, will always get the New Army event
+-- Can reform from a presidential dictatorship to a republic (with conditions of state n gov and idealism researched, no reactionary party in power)
+-- Relaxed conditions on decision to claim tibet, reclaim macau, now can have pro mil and government type doesnt matter	
+-- Can now take a similar decision to claim Mongolia like Tibet
+-- Self strenghtening movement decision can be taken until 1905 if not Qing (i.e China or Taiping) - gives more ticking RP, but now none from conquest
+-- China cant form iberia on spain and portugal
+* Spain
+-- Can now as non-carlists diplomatically form the Iberian union
+-- Iberian union gets decisions to accept portuguese and basque cultures
+
+Liferating
+* If India, China, or Korea westernise an event will fire to increase their core provinces' (excluding mountains or desert) life rating by 3		
+-- MTTH 4 years, reduced with some techs
+
+Immigration
+* Reduced the bonus modifiers to immigrant attraction that the US gets (homestead act & statue of liberty) to 50% and 125% immigration attraction buff	
+* Reduced the new world bonus from x4 to x2.5, and x3.1% to x1.8 for smaller new worlders	
+-- drops to x1.4 and x1.2 in 1905	
+* Third emmigration factor start in 1905 not 1900	
+* Republics get a x1.35 immigration attraction factor buff	
+* GPs get a x1.2 immigration attraction factor buff	
+* Unemployment below 2.5% gives x1.15 attraction buff	
+* Fully socially reformed nation now also gets +100% immigration attraction	
+
+CBs & Infamy
+* New decision to allow or prevent CBs being justified on you nation
+* Added in minor conquest cb for uncivs similar to establish protectorate	
+* Removed negotiated puppet release cb, can just use decision to release vassals	
+-- now uncivs can use this decision as well
+* New cb to lower tarrifs - must be free trade and can only use on protectionists
+-- Target can revoke its effects at the cost of infamy and prestige
+* Military access CB, very fast justification (~22 days). Can only use on non-GPs and whilst at war
+-- Operates like a humiliate cb, will cause prestige loss on the losing side
+-- Note: the war that you declare is your access through the 3rd party
+* Mass conquest CB allows full annexation of an indpendent nation, no target limits otherwise
+-- 40 infamy, must be some kind of dictatorship and have mass politics researched to use
+
+Units
+* Brigade size increased from 3k to 5k
+-- All maintanence costs increased by 5/3 accordingly
+* Guards now have require luxury clothes and liquor to maintain (like infantry costs regular clothes)
+
+Balance Changes
+* Anti-natalism now gives +35% education efficiency
+* Poudre B only buffs guards (and by +1 attack & defence now)
+* Guard base attack increased by +1, and base defence by +2
+* Heavy Armament tech gives +2 attack to tanks
+* Base tank attack increased by +2
+
+GFX & Localisation Changes
+* GB now called The United Federation of Britain (UFB)
+* RoC now called The Federal Republic of China
+* Socialists description changed to match that they support political and social reforms always
+* New UI to view conditions and effects
+* Decision to hide the extra decisions introduced by this mod
+
+Bugs Fixes
+* UK end of splendid isolation event ifired twice - fixed to fire only once 	
+* Gendarmerie invention localisation fix	
+* COUNTRY_LEDGER... localisation fix
+* Event for if heavenly kingdom wins and exiles qing localisation now localised	
+-----------------------------------------------------------------------------------------------------------
+
+
+Version 1
+---------
+CHECKSUM: PPET (Steam version)
+          IXQR (Cracked version)
+
+Flavour Changes
+* China
+-- Westernised China wont lose cores on Mongolia
+-- If Qing reforms to a republic, it gets event for Xinhai revolution (i.e will enter waring states era)
+* Danubian Federation
+-- Cultures now highly likely to accept and even more likely at low militancy to reduce RNG
+-- Decision to expand DNB accepted cultures if a republic or con. monarchy to get serb, montenegrin, bosniak & albanian
+* Ottoman Empire
+-- If Ottoman Empire (/Republic) have liberty or equality nv, or con. monarchy, other GPs cannot take decision to incite arab revolts and remove accepted arabic cultures
+-- As a republic can also take Tanzimat reforms and Ottomanism decisions like if a con. monarchy
+-- Will not get turkish nationalism event as a republic if reformed to it via decision i.e have liberty nv (or equality nv)
+* USA
+-- Not immediately thrown into war when it takes Manifest Destiny
+-- Once the US has manifest destiny, can claim all of Mexico for 32 infamy, throwing the US straight into an annex war on mexico (doesnt get cores any more than the usual manifest destiny ones)
+* Russia
+-- Russia no longer starts with accepted cultures Ukrainian and Belarusian
+-- Can get them accepted via decision around 1870 via researching specific culture techs Social Science & Experimental Pshychology
+* Austria
+-- Starts with North German as an accepted culture
+-- If Austria wins the brothers war, a player can take what the ai would take (i.e the decision to take some land which makes the SGF a realistic formable option)
+* Two Sicilies
+-- Tech now almost matches Sardinia Piedmont
+* Spain
+-- Decision for conquest CBs on FRCA breakaways (after taking the decision to conquer FRCA)
+* Mexico
+-- Given army and culture tech buff so they start matching the USA
+
+CB & Infamy Changes
+* Take state CB now 10 infamy
+* Conquest CB now 20 infamy
+* New aquire capital CB, 15 infamy
+* -0.02 monthly infamy for secondary powers
+* -0.05 for civilised nations (not great or secondary powers)
+* -0.2 for uncivs
+* Adding wargoal jingoism requirement reduced to 4.9%
+* Removing from sphere now only costs 1 prestige and no infamy
+* Negotiated CBs added: (only used by and on players, give no infamy militancy or prestige loss, all 1 month truces, must have taken Enable Grants decision to be justified on)
+-- Take state
+-- Take substate
+-- Release puppet (does not place in your sphere automatically)
+
+Political & Reform Changes
+* Socialists will back political reforms
+* Liberals a bit more likely to back social reforms with militancy
+* Healthcare reduced pop growth to 0 for the 2nd reform, 0.01 for the 3rd reform, and 0.02 for the 4th and 5th
+-- Triggered on full funding is 0.01 for all, and an extra 0.01 for fully funding on the final reform
+-- Now also reduces the poor and middle class luxury needs
+-- Administratvie multiplyer for the final reform slightly increased (4 to 5)
+* Immigration attraction from reforms increased, with the largest increases for healthcare and unemployment (now 50% and 45%)
+* Fascists can intruduce slavery (if they do will get an event every year with the option of enslaving non accepted pops in a random state)
+* Max social reforms now gives -0.1 militancy (as well as -30% social reform desire)
+
+National Focus
+* Attract immigrants buffed to 150%
+* Colonial attract immigrants buffed to 300%
+
+Invention Changes
+* Added in 4 population reduction inventions of -0.01
+-- 2 contraception related in the medicine tech tree
+-- 1 to do with shift_work for women in the workforce
+-- 1 with social_alienation for late marriages leading to less children
+-- These inventions require high to very high literacy, or in the case of shift_work one industry, to discover. Although contraception ones have a base chance once their respective tech is researched.
+* 3 RGO throughput increases
+-- combustion_engine tech with invention tractors now also giving +50% throughput
+-- carbon_soil in organic_chemistry gives +25% throughput
+-- mines and fields shiftwork in shift_work tech gives another +25% throughput
+
+Immigration Changes
+* Added modifiers of +0.4 +0.3, +0.2  to base emmigration rate in years 1848, 1871 and 1900
+* Switzerland if a republic has a reduced emigration rate like republics in the new world
+(I dont think I changed anything else, but the effect on gov type and whether you are meeting your citizens reform desires makes a far bigger impact on their emmigration rate than before. Republics are very good at getting immigrants and keeping them, but con. monarchies are pretty good as well.)
+* US homestead act and statue of liberty immigration modifiers increased moderately to partially account for increase immigration attraction from reforms
+
+Literacy Impact
+* On pop_growth:
+-- Below 35% extra +0.01
+-- Below 50% extra +0.01
+-- Above 60% -0.01%
+-- Above 70% -0.01%
+-- Above 80% -0.01%
+-- Above 90% -0.01%
+* Low literacy has reduced assimilation
+-- Higher literacy also has increased assimilation
+* High literacy also gets some leadership & factory owner costs buffs
+* Reform desire change speed slightly lower at lower literacy and vice versa
+
+Late Game Liquidity Crisis Changes
+* Money hoarder effects added based on treasury size that reduce tarrif efficiency and tax efficiency as money accumulates in treasury
+-- Aimed at AI hoarding money and killing the world's supply, but also applies to players
+-- Check the triggerd_modifiers file in common to see all the various modifiers at different treasury sizes
+
+New General Decisions
+* Grant system copied in, from the DOD MP mod
+* Reform to a republic with universal_voting, secret_ballots, free_press, yes_meeting as selected reforms
+-- Changes national value to Liberty
+-- Event will soon fire giving the option to choose between regionalism, confederalism, federalism and unitary
+* One off infamy reduction decision to lose 10 infamy, but get +0.10 infamy a month for 10 years
+* Decision to build ports up to current tech lvl in all owned provinces for -10% tax efficiency for 5 years
+-- Same type of decision to upgrade forts in all owned provinces
+* Can take Fascist cartels if fascist to get: 	factory_throughput = -0.2, poor_life_needs = -0.15, core_pop_militancy_modifier = -0.05, core_pop_consciousness_modifier = -0.15, pop_promotion_chance = -0.4 (I think this last one does nothing)
+-- Can remove this effect if no longer fascist via another decision
+* Birth rate decisions active for 10 years:
+-- Increase pop growth by 0.02, at cost of education_efficiency_modifier = -0.15, tax_efficiency = -0.1 and +0.02 infamy a month
+-- Decrease pop growth by 0.02, for education_efficiency_modifier = 0.10 (cant take if reactionary government)
+* Focus at home, active for 20 years
+-- Need state_n_government, war = no
+-- Effect: cb_generation_speed_modifier = -2, diplomatic_points_modifier = -1, influence_modifier = -2, prestige = -2, research_points_modifier = 0.2, rgo_throughput = 0.15, factory_throughput = 0.1, tax_efficiency = 0.05
+* Internal reform, active for 20 years
+-- Need liberal or socialist government, war = no
+-- Effect: political_reform_desire = 0.25, social_reform_desire = 0.25, global_pop_consciousness_modifier = 0.2, global_pop_militancy_modifier = 0.1
+* Province development, one off 
+-- Need integral_rail_system, electricity, electrical_power_generation, mass_politics, war = no
+-- Effect, increase all non colonial provinces' liferating by 3, add national modifier reducing income and productivity for 5 years: tax_efficiency = -0.15, RGO_output = -0.25, factory_output = -0.25, diplomatic_points_modifier = -0.5
+
+Factory Upgrade Changes
+* Factories that took 2 years to build now take 200 days
+* Factories that took 1 year to build now take 100 days
+
+Population Size effects
+* Small populations can mobilize a higher percentage of their populace, and have higher tax efficiency
+* Large populations have reduced tax efficiency, and more research point generation
+* Check triggerd_modifiers file in common to see all at the different pop sizes
+* Pops start dying below 70% life needs met
+
+GFX & Localisation Changes
+* USA flag shanged to fallout one so stars make sense when adding more states
+* Ottoman Republic (Turkey) renamed to Sublime Porte, flag changed (like DOD)
+* General's attack and defence stats are now visible at a glance (without needing to hover)
+
+Federal Republic of Great Britain - Easter Egg
+* Spawned via decision when playing as the UK - availbale until 1851 
+* Can easily get cores on whole british isles, with all cultures there accepted after fighting a civil war with the UK
+* Massively increased RGO size, factory and research output and slightly increased pop growth at the cost of not being able to manufacture CBs, ticking reduction of prestige, halved diplo point gain, and no influence with other nations
+* Can get immigration like the new world, and decision to give it almost the same attraction and assimilation as the USA can get
+* Unique party: The Federalists (liberal)
+* National value: Equality
+* INCREDIBLY STRONG nation at home (~Greater Germany power levels), but isolationist
+
+
+Any problems or changes to suggest can talk to the mod creators: Townes

@@ -1,0 +1,51 @@
+country_event = {
+	id = 670001
+	title = "EVTNAME670001" #The Enslavement
+	desc = "EVTDESC670001"
+	picture = "boer_concentration_camp"
+	
+	trigger = {
+		OR = {
+			government = fascist_dictatorship
+			AND = {
+				government = absolute_monarchy
+				ruling_party = reactionary
+			}
+		}
+		slavery = yes_slavery
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 3
+			AND = {
+				government = absolute_monarchy
+				ruling_party = reactionary
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT670001OPTA"
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			is_slave = yes
+			any_pop = {
+				limit = {
+					AND = {
+						is_primary_culture = no
+						is_accepted_culture = no
+					}
+				}
+				pop_type = slaves
+			}
+		}
+	}
+	option = {
+		name = "EVT670001OPTB"
+	}
+}

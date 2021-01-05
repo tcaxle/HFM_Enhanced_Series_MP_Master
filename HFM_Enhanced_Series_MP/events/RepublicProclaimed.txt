@@ -1,0 +1,80 @@
+country_event = {
+	id = 777789
+	title = "EVTNAME777789"
+	desc = "EVTDESC777789"
+	picture = "Celebration"
+	
+	trigger = {
+		has_country_flag = republic_proclaimed
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA777789"
+		political_reform = confederalism
+		clr_country_flag = republic_proclaimed
+	}
+
+	option = {
+		name = "EVTOPTB777789"
+		political_reform = regionalism
+		clr_country_flag = republic_proclaimed
+	}
+
+	option = {
+		name = "EVTOPTC777789"
+		political_reform = federalism
+		clr_country_flag = republic_proclaimed
+	}
+
+	option = {
+		name = "EVTOPTD777789"
+		political_reform = unitary
+		clr_country_flag = republic_proclaimed
+	}
+}
+
+country_event = {
+	id  = 777792
+	title = "EVTNAME777792"
+	desc = "EVTDESC777792"
+	picture = "Celebration"
+	
+	trigger = {
+		NOT = { has_country_flag = republic_reforms }
+		government = democracy
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	option = {
+		name = "We shall work together, across the divide"
+		set_country_flag = republic_reforms
+	}
+}
+
+country_event = {
+	id  = 777793
+	title = "EVTNAME777793"
+	desc = "EVTDESC777793"
+	picture = "failed_revolution"
+	
+	trigger = {
+		has_country_flag = republic_reforms
+		NOT = { government = democracy }
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	option = {
+		name = "Our days of republican virtue are over, for now at least"
+		clr_country_flag = republic_reforms
+	}
+}

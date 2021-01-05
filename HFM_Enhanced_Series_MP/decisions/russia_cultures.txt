@@ -1,0 +1,19 @@
+political_decisions = {
+	accept_our_slavic_brethren = {
+		picture = ever_victorious
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = accepted_our_slavics }
+		}
+		allow = {
+			social_science = 1
+			experimental_psychology = 1
+			war = no
+		}
+		effect = {
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ukrainian
+			set_country_flag = accepted_our_slavics
+		}
+	}
+}

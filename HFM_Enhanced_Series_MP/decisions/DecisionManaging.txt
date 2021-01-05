@@ -1,0 +1,53 @@
+political_decisions = {
+	hide_the_decisions = {
+		potential = {
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+
+		allow = { ai = no }
+
+		effect = {
+			set_country_flag = hiding_the_decisions
+		}
+	}
+	
+	show_the_decisions = {
+		potential = {
+			has_country_flag = hiding_the_decisions
+		}
+
+		allow = { ai = no }
+
+		effect = {
+			clr_country_flag = hiding_the_decisions
+		}
+	}
+	
+	land_transfer = {
+		picture = the_central_asia
+		potential = { 
+			NOT = { has_country_flag = begin_land_transfer }
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = { ai = no }
+		
+		effect = {
+			set_country_flag = begin_land_transfer
+		}
+	}
+	
+	end_land_transfer = {
+		picture = the_central_asia
+		potential = { 
+			has_country_flag = begin_land_transfer
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		
+		allow = { ai = no }
+		
+		effect = {
+			clr_country_flag = begin_land_transfer
+		}
+	}
+}

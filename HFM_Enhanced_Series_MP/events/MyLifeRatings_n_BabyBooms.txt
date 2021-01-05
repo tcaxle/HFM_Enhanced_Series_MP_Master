@@ -1,0 +1,91 @@
+country_event = {
+	id = 777790
+	title = "EVTNAME777790"
+	desc = "EVTDESC777790"
+	
+	trigger = {
+		OR = {
+			tag = CHI
+			tag = HND
+			tag = KOR
+		}
+		civilized = yes
+		NOT = { has_country_flag = asian_liferating_increase_1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.8
+			basic_chemistry = 1
+		}
+		modifier = {
+			factor = 0.5
+			medicine = 1
+		}
+		modifier = {
+			factor = 0.9
+			piston_steam_engine = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA777790"
+		all_core = {
+			limit = {
+				NOT = { terrain = mountain }
+				NOT = { terrain = desert }
+				NOT = { terrain = jungle } 
+				NOT = { terrain = arctic }
+				NOT = { terrain = montane_tundra }
+				NOT = { terrain = montane_forest }
+			}
+			life_rating = 3
+		}
+		set_country_flag = asian_liferating_increase_1
+	}
+}
+
+country_event = {
+	id = 777795
+	title = "EVTNAME777795"
+	desc = "EVTDESC777795"
+	
+	trigger = {
+		OR = {
+			tag = CHI
+			tag = HND
+			tag = KOR
+		}
+		civilized = yes
+		has_country_flag = asian_liferating_increase_1
+		NOT = { has_country_flag = asian_liferating_increase_2 }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.8
+			electricity  = 1
+		}
+		modifier = {
+			factor = 0.5
+			organic_chemistry = 1
+		}
+		modifier = {
+			factor = 0.9
+			combustion_engine = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA777795"
+		all_core = {
+			limit = {
+				NOT = { life_rating = 36 }
+			}
+			life_rating = 5
+		}
+		set_country_flag = asian_liferating_increase_2
+	}
+}

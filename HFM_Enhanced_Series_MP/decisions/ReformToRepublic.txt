@@ -1,0 +1,24 @@
+political_decisions = {
+	proclaim_republic = {
+		picture = provincia_britannia
+		potential = {
+			government = hms_government
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			war = no
+			vote_franschise = universal_voting
+			political_parties = secret_ballots
+			press_rights = free_press
+			public_meetings = yes_meeting
+		}
+		effect = { 
+			government = democracy
+			nationalvalue = nv_liberty
+			set_country_flag = republic_proclaimed
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

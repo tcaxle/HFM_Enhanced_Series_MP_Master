@@ -1,0 +1,88 @@
+#pop growth decreases
+contraception = {
+	limit = { inorganic_chemistry = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			literacy = 0.40
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.60
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.80
+		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}
+}
+
+popular_prophylactic = {
+	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 1
+		modifier = {
+			factor = 2
+			literacy = 0.60
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.80
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.90
+		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}
+}
+
+women_workforce = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = -2
+			NOT = { industrial_score = 20 }
+		}
+		modifier = {
+			factor = 2
+			industrial_score = 200
+		}
+		modifier = {
+			factor = 2
+			industrial_score = 500
+		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}
+}
+
+late_marriage = {
+	limit = { social_alienation = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 2
+			literacy = 0.80
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.90
+		}
+		modifier = {
+			factor = 4
+			literacy = 0.95
+		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}
+}
