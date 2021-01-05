@@ -1,3 +1,5 @@
+Changes that are waiting to be implemented:
+
 * Add in PDM service economy
 -- potentially more economy changes
 * HRE formable by austria from PDM, north italy expansion route
